@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import "./App.css";
+import { useState } from "react";
+import "../App/Styles/App.css";
+import { Input } from "../components/Input/Input";
+import { Todo } from "../components/Todo/Todo";
 
 function App() {
   const [text, setText] = useState<string>("");
@@ -51,27 +53,14 @@ function App() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          type="text"
-        />
-        <button onClick={addTodo} type="submit">
-          +
-        </button>
-      </form>
+      <section>
+        <div className="container">
+          <Input text = {text} handleSubmit ={handleSubmit} setText ={setText}  addTodo ={addTodo} />
+        </div>
+      </section>
 
       {todo.map((todo) => (
-        <div key={todo.id}>
-          <input
-            type={"checkbox"}
-            checked={todo.isDone}
-            onChange={() => handleIsDone(todo.id)}
-          />
-          <li>{todo.text}</li>
-          <button onClick={() => deleteTodo(todo.id)}>x</button>
-        </div>
+        <Todo  key={todo.id} todo ={todo} handleIsDone={handleIsDone} deleteTodo ={deleteTodo}/>
       ))}
     </div>
   );
