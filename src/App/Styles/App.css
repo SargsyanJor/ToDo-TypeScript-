@@ -1,0 +1,24 @@
+* {
+  padding-block-end: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.header {
+  height: 100vh;
+  background-color: #2d275a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,44 @@
+.color {
+  text-decoration: line-through;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sectionInput {
+  display: flex;
+  gap: 20px;
+}
+
+.addInput {
+  width: 380px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #1c1740;
+  color: #ffffff;
+}
+
+.addBTN {
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #1c1740;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sectionTodos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

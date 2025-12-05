@@ -1,0 +1,27 @@
+.toDoBlock {
+  background-color: #3a3370;
+  width: 380px;
+  padding: 0;
+  border-radius: 6px;
+}
+
+.todos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  font-size: 18px;
+}
+
+.inputCheck,.deleteBtn {
+    cursor: pointer;
+}
+
+
+.todoLi {
+  font-size: 15px;
+}
+
+.underline {
+    text-decoration: line-through;
+}
